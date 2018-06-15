@@ -275,12 +275,12 @@ class NoSafe:
 					#self.SendMsg(canal, banner + '0,5[4HELP0] ' + str(self.prefix) + 'hashkill 4..0: 4<hash>0 Busca o REVERSE da hash e mostra o seu tipo.')
 					#self.SendMsg(canal, banner + '0,5[4HELP0] ' + str(self.prefix) + 'google 4....0: 4<palavra/chave>0 Mostra os principais resultados do motor de busca da Google.')
 					#self.SendMsg(canal, banner + '0,5[4HELP0] ' + str(self.prefix) + 'bitcoin 4...0: Checar cotação do bitcoin do dia.')
-					#self.SendMsg(canal, banner + '0,5[4HELP0] 4Python IRC Bot - Coded by ins3ct and Zirou - #nosafe / Priv8')
+					#self.SendMsg(canal, banner + '0,5[4HELP0] 4Python Bot - Coded by ins3ct and Zirou - #nosafe / Priv8')
 
 			if command[0] == 'rehash':
 				if user in self.admin:
 					time.sleep(1)
-					self.SendCommand('QUIT irc.priv8.jp ')
+					self.SendCommand('QUIT  #Sua mensagem aqui.')
 					self.s.close()
 					self.close = True
 					exit(1)
@@ -832,18 +832,18 @@ class NoSafe:
 			
 if __name__ == '__main__':
 
-	servidor = 'irc.priv8.jp'
-	porta = 6667
-	nick = 'z10n'
-	nome = 'Nosafe'
-	email = 'nosafe@priv8.jp'
-	canal_principal = '#python' # Canal de comando do bot
-	ajoin = []#'#nosafe', '#priv8', '#inurlbrasil', '#brasil', '#protowave'] # Canais secundários, .sendall enviará mensagem para esses canais.
-	admin = ['ins3c7', 'Zirou', 'vL'] # Nicks para acessos à funções especiais do bot
+	servidor = ''
+	porta = 
+	nick = ''
+	nome = ''
+	email = ''
+	canal_principal = '' # Canal de comando do bot
+	ajoin = [] # Canais secundários, .sendall enviará mensagem para esses canais.
+	admin = [''] # Nicks para acessos à funções especiais do bot
 	prefix = '.' # Prefixo para uso dos comandos
 	verbose = True
 
-	simple_banner = '14,1[Priv8.jp]0 '
+	simple_banner = '14,1[#Seu Banner aqui]0 '
 
 bot = NoSafe(servidor, porta, nick, nome, email, canal_principal, ajoin, admin, prefix, verbose, simple_banner)
 bot.run()
