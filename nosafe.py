@@ -819,7 +819,7 @@ class NoSafe:
 				self.Logging(str(user_channel), str(user_nick), str(text_log)) # Grava os logs
 
 				# Banner oficial:
-				banner = '14,1[#' + user_channel[1:] + '@Priv8.jp] '
+				banner = '14,1[#' + user_channel[1:] + '#Seu banner aqui] '
 
 				try:
 					if (str(user_msg)[0] == str(self.prefix)):
